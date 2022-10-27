@@ -4,48 +4,9 @@ import Navbar from 'react-bootstrap/Navbar';
 import navIcon1 from '../assets/img/linkedin1.svg'
 import navIcon2 from '../assets/img/github.svg'
 import navIcon3 from '../assets/img/twitter.svg'
+import DarkMode from '../Darkmode.tsx';
 import { useEffect, useState } from 'react';
 
-const DarkMode = () => {
-  let clickedClass = "clicked";
-  const body = document.body;
-  const lightTheme = "light";
-  const darkTheme = "dark";
-  let theme;
-
-  if (localStorage) {
-    theme = localStorage.getItem("theme");
-  }
-
-  if (theme === lightTheme || theme === darkTheme) {
-    body.classList.add(theme);
-  } else {
-    body.classList.add(lightTheme);
-  }
-
-  const switchTheme = (e) => {
-    if (theme === darkTheme) {
-      e.target.classList.remove(clickedClass);
-      localStorage.setItem("theme", "light");
-      theme = lightTheme;
-    }else {
-      body.classList.replace(lightTheme, darkTheme);
-      e.target.classList.add(clickedClass);
-      localStorage.setItem("theme","dark");
-      theme = darkTheme;
-    }
-  };
-
-  return (
-    <button
-     className={theme === "dark" ? clickedClass : ""}
-    id="darkMode"
-    onClick={(e) => switchTheme(e)}>  
-    </button>
-  )
-};
-
-export default DarkMode;
 
 export const NavBar = () => {
   const[activeLink, setActiveLink] = useState('home');
@@ -70,7 +31,6 @@ export const NavBar = () => {
   }
 
   return (
-    <body>
     <Navbar expand="lg" className={scrolled ? "scrolled": ""}>
       <Container>
         <p className='toggle'>Toggle Theme</p>
@@ -99,6 +59,5 @@ export const NavBar = () => {
         </Navbar.Collapse>
       </Container>
     </Navbar>
-    </body>
   );
 }

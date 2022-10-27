@@ -5,12 +5,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-      <body>
     <div className="App">
       <form />
       <NavBar />
     </div>
-    </body>
   );
 }
 
