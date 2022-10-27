@@ -4,7 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import navIcon1 from '../assets/img/linkedin1.svg'
 import navIcon2 from '../assets/img/github.svg'
 import navIcon3 from '../assets/img/twitter.svg'
-import DarkMode from '../Darkmode.tsx';
+import DarkMode from '../Darkmode.js';
 import { useEffect, useState } from 'react';
 
 
@@ -50,9 +50,9 @@ export const NavBar = () => {
           </Nav>
           <span className='navbar-text'>
             <div className='social-icon'>
-              <a href="#"><img src={navIcon1} alt="" /></a>
-              <a href="#"><img src={navIcon2} alt="" /></a>
-              <a href="#"><img src={navIcon3} alt="" /></a>
+              <a href="https://www.linkedin.com/in/hunter-brennan-523000241/"><img src={navIcon1} alt="Linkedin" /></a>
+              <a href="https://github.com/HunterBrennan1"><img src={navIcon2} alt="Github" /></a>
+              <a href="https://twitter.com/hunterb00733201"><img src={navIcon3} alt="Twitter" /></a>
             </div>
             <button className='vvd' onClick={() => console.log('connect')}><span>Connect With Me!</span></button>
           </span>
