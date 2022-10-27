@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
+:root {
+  --dark: #121212;
+  --dark-gray: #1c1c1e;
+  --light: #fff;
+  --light-gray: #f5f5f5;
+  --light-gray-dark: #ebebeb;
+}
+
+
+
 *{
   margin:0;
   padding:0;
@@ -11,13 +21,79 @@ html {
   scroll-padding-top:75px ;
 }
 
-body{
+body.light{
   font-weight: 400;
   overflow-x: hidden;
   position: relative;
-  background-color: #fff !important;
-  color: #fff !important;
+  background-color: var(--light);
+  color: var(--light-gray-dark) ;
+  font-family:'Poppins', sans-serif; 
+
+   /* LIGHT MODE VARIABLES */
+   --text-color: #1d1d1d;
+   --card-color: #ffffff;
+   --alternative-text-color: #6e6e6e73;
+   --card-opacity: 15%;
+   --background-color: #f5f5f5;
+   --filter-background-color: #ebebeb;
+   --filter-text-color-on-hover: #6e6e6e;
+   --filter-active-color: #ffffff;
+   --nav-button-color: #ffffff;
+   --toggle-icon-color: #e36577;
+   --toggle-background: #ffffff;
+   --toggle-box-shadow: inset 0 0.2rem 6rem rgba(0, 0, 0, 0.1),
+     inset 0 0.2rem 0.8rem rgba(0, 0, 0, 0.1),
+     inset 0 -0.4rem 0.4rem rgba(0, 0, 0, 0.05);
+   --toggle-transition: 0.3s;
+   --switch-position-left: 4.5px;
+   --switch-background: linear-gradient(to bottom, #eaeaea, #f9f9f9);
+   --switch-box-shadow: 0 0.8rem 2rem rgba(0, 0, 0, 0.1),
+     inset 0 0.4rem 0.4rem rgba(255, 255, 255, 1),
+     inset 0 -0.4rem 0.4rem rgba(255, 255, 255, 1);
+   --subheading-color: #6e6e6e;
+   --primary-button-border: linear-gradient(45deg, #e36577, #f6edb2);
+   --primary-button-color: #ffffff; /* CTA */
+   --secondary-button-border: #ebebeb;
+   --secondary-button-color: #ffffff; /* CTA */
+   --tertiary-button-border: transparent;
+   --tertiary-button-color: transparent; /* CTA */
+}
+body.dark{
+  font-weight: 400;
+  overflow-x: hidden;
+  position: relative;
+  background-color: var(--dark);
+  color: var(--light);
   font-family:'Poppins', sans-serif; ;
+
+   /* DARK MODE VARIABLES */
+   --text-color: #fafafa;
+   --card-color: #2c2c2e;
+   --alternative-text-color: #6e6e6e73;
+   --card-opacity: 10%;
+   --background-color: #1c1c1e;
+   --filter-background-color: rgba(0, 0, 0, 0.4);
+   --filter-text-color-on-hover: #6e6e6e;
+   --filter-active-color: #2c2c2e;
+   --nav-button-color: #1c1c1e;
+   --toggle-icon-color: #f6edb2;
+   --toggle-background: #111112;
+   --toggle-box-shadow: inset 0 0.8rem 6rem rgba(0, 0, 0, 0.1),
+     inset 0 0.8rem 0.8rem rgba(0, 0, 0, 0.1),
+     inset 0 -0.4rem 0.4rem rgba(0, 0, 0, 0.1);
+   --toggle-transition: 0.3s;
+   --switch-position-left: 26.5px;
+   --switch-background: linear-gradient(to bottom, #2c2c2e, #1c1c1e);
+   --switch-box-shadow: 0 0.8rem 4rem rgba(0, 0, 0, 0.5),
+     inset 0 0.1rem 0.4rem rgba(255, 255, 255, 0.1),
+     inset 0 -0.1rem 0.4rem rgba(255, 255, 255, 0.1);
+   --subheading-color: rgba(250, 250, 250, 0.6);
+   --primary-button-border: linear-gradient(45deg, #e36577, #f6edb2);
+   --primary-button-color: #1c1c1e; /* CTA */
+   --secondary-button-border: #1c1c1e;
+   --secondary-button-color: #1c1c1e; /* CTA */
+   --tertiary-button-border: transparent;
+   --tertiary-button-color: transparent; /* CTA */
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -34,21 +110,61 @@ p.danger {
   color:red;
 }
 
+.toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color:var(--dark);
+  font-weight:600;
+  margin-bottom: 0 !important;
+}
 
+#darkMode {
+  background: transparent url("../src/assets/img/iconmonstr-weather-111.svg") no-repeat center;
+  background-size: 30px 30px;
+  width: 45px;
+  height: 45px;
+  filter: grayscale(100%);
+  border: none;
+  border-radius: 50%;
+  transition: background-color 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+#darkMode:hover,
+#darkMode:focus {
+  filter: none;
+  background-color: #ebebeb;
+  cursor: pointer;
+}
+
+#darkMode.clicked {
+  filter: none !important;
+  background-color: #ebebeb;
+}
 
 nav.navbar {
   padding: 18px 0;
   position: fixed;
   width: 100%;
-  background-color: #f5f5f5;
+  background-color: var(--light-gray);
   top: 0;
   z-index: 9999;
   transition: 0.32 ease-in-out;
 }
 
+nav.navbar.dark {
+  background-color: var(--dark);
+}
+
 nav.navbar.scrolled {
   padding: 0px 0;
-  background-color: #fff;
+  background-color: var(--light);
+}
+
+.navbar-brand {
+  margin-top: 5px;
+  display: flex;
+  justify-content: center;
 }
 
 nav.navbar a.navbar-brand {
@@ -58,7 +174,7 @@ nav.navbar a.navbar-brand {
 .navbar-nav {
   margin-left: auto !important;
   margin-right: 0 !important;
-  background-color: #ebebeb;
+  background-color: var(--light-gray-dark);
   padding-left: 4px !important;
   padding: 5px;
   border-radius: 30px;
@@ -72,7 +188,7 @@ nav.navbar a.navbar-brand {
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: bold;
   color: #121212 !important;
-  background-color: #fff;
+  background-color: var(--light);
   letter-spacing: 0.8px;
   padding: 0 25px;
   font-size: 18px;
@@ -90,7 +206,7 @@ a.navbar-Link.nav-link {
 }
 
 a.active.navbar-Link.nav-link {
-  background-color: #fff;
+  background-color: var(--light);
   border-radius: 50px;
   font-weight: 600;
   transition: all 0.3s;
@@ -109,15 +225,15 @@ span.navbar-text {
 .social-icon a {
   width: 42px;
   height:42px;
-  color:#121212 !important;
-  background: #fff;
+  color:var(--dark) !important;
+  background: var(--light);
   display: inline-flex;
   border-radius: 50%;
   margin-right: 6px;
   align-items: center;
   justify-content: center;
   line-height: 1;
-  border: 1px solid #121212;
+  border: 1px solid var(--dark);
 }
 
 .social-icon a::before{
