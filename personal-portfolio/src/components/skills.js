@@ -13,7 +13,7 @@ import  Express from "../assets/img/express.svg"
 
 export const SkillsPage = () => {
   return(
-    <section className='Skills-Page'>
+    <section className='Skills-Page' id="skills">
       <Container>
         <h2>My Tech Stack and Skills</h2>
             <div className='skills'>

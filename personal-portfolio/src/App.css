@@ -382,7 +382,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .MainPage {
   background-color: var(--background-color);
   color: var(--text-color);
-  height:700px;
+  height:650px;
   width:100%;
   padding-top: 10px;
 }
@@ -418,6 +418,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 20px;
   font-weight: 600;
   border-radius: 20px;
+  margin-top:15px;
 }
 
 .Skills-Page {
@@ -432,7 +433,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin: 3rem;
   margin-left: auto;
   margin-right: auto;
-  opacity: 0.5;
+  /* opacity: 0.5; */
 }
 
 .skillswrapper {
@@ -444,6 +445,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   width: 80px;
   height: 80px;
   margin: 0 2rem;
+  box-shadow: 10px 10px 12px -3px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 12px -3px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 12px -3px rgba(0,0,0,0.75);
+border-radius: 13px;
 }
 
 .skill-title {
