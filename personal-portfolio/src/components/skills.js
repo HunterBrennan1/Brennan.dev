@@ -9,12 +9,14 @@ import  GithubImg from "../assets/img/githubimg.svg"
 import  GitImg from "../assets/img/gitimg.svg"
 import  Jquery from "../assets/img/jquery.svg"
 import  Express from "../assets/img/express.svg"
+import Code from "../assets/img/code.svg"
+
 
 
 export const SkillsPage = () => {
   return(
     <section className='Skills-Page' id="skills">
-      <Container>
+      <Container className='skillswrapper'>
         <h2>My Tech Stack and Skills</h2>
             <div className='skills'>
               <div className='skilldiv'> 
