@@ -13,6 +13,7 @@
   --toggle-bg-color: #fefefe;
   --transition-color:#121212;
   --dark-light:#121212;
+  --background-image: url(./assets/img/lightthemebg.svg);
 }
 
 [data-theme="dark"] {
@@ -26,6 +27,7 @@
   --toggle-bg-color: #fefefe;
   --transition-color:#fff;
   --dark-light:#fff;
+  --background-image: url(./assets/img/darkthemebg.svg);
 }
 
 
@@ -66,6 +68,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h2 {
   color: var(--text-color);
+  padding-top: 50px;
 }
 
 header {
@@ -381,15 +384,20 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .MainPage {
   background-color: var(--background-color);
+  background-image: var(--background-image);
+  background-size: cover;
   color: var(--text-color);
-  height:650px;
+  height:100vh;
   width:100%;
-  padding-top: 10px;
+  padding-top: 100px;
 }
 
 .headerContainer {
   background-color:var(--link-background-color) ;
   border-radius: 20px;
+  box-shadow: 10px 10px 12px -3px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 10px 10px 12px -3px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 12px -3px rgba(0,0,0,0.75);
  
 }
 
@@ -463,6 +471,18 @@ border-radius: 13px;
   border-radius: 13px;
 }
 
+.hidden {
+  opacity: 0;
+  transition: 1s;
+  filter: blur(5px);
+  transform: translateX(-100%);
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
 
 .App {
   text-align: center;
@@ -476,6 +496,9 @@ border-radius: 13px;
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
+  }
+  .hidden {
+    transition: none;
   }
 }
 
@@ -503,6 +526,33 @@ border-radius: 13px;
   }
 }
 
+
+@media screen and (max-width:1400px) {
+  .headerContainer {
+    margin-top: 25px !important;
+  }
+
+  header {
+    height: 155px;
+  }
+  
+  h2 {
+    padding-top: 50px;
+  }
+
+}
+
+@media screen and (max-width:990px) {
+  header {
+    height: 60px;
+  }
+
+  nav {
+    height: 80px;
+  }
+  
+}
+
 @media screen and (max-width:768px) {
   .img-fluid{
     display:none;
@@ -512,14 +562,28 @@ border-radius: 13px;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
     height: 400px;
+    display: none;
   }
 
   .headerMain {
     height: 300px;
-    padding-top: 75px;
+    padding-top: 175px;
+    margin-top: 100px;
+  }
+
+  .headerContainer {
+    background-color: transparent;
+    box-shadow: none;
   }
 
   h2 {
-    padding-top: 20px !important;
+    padding-top: 90px !important;
   }
+}
+
+@media screen and (max-height:800px) {
+  .headerMain {
+    padding-top: 130px;
+  }
+  
 }
