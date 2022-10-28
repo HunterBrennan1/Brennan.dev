@@ -2,7 +2,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import navIcon1 from '../assets/img/linkedin1.svg'
-import navIcon2 from '../assets/img/github.svg'
+import navIcon2 from '../assets/img/github1.svg'
 import navIcon3 from '../assets/img/twitter.svg'
 import DarkMode from '../Darkmode.js';
 import { useEffect, useState } from 'react';
@@ -31,6 +31,7 @@ export const NavBar = () => {
   }
 
   return (
+    <header>
     <Navbar expand="lg" className={scrolled ? "scrolled": ""}>
       <Container>
         <p className='toggle'>Toggle Theme</p>
@@ -42,8 +43,8 @@ export const NavBar = () => {
           </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
+            <Nav.Link href="#all" className={activeLink === "all" ? "active navbar-Link" : "navbar-Link"} onClick={() => onUpdateActiveLink('all')}>All</Nav.Link>
             <Nav.Link href="#home" className={activeLink === "home" ? "active navbar-Link" : "navbar-Link"} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
-            <Nav.Link href="#about-me" className={activeLink === "about-me" ? "active navbar-Link" : "navbar-Link"} onClick={() => onUpdateActiveLink('about-me')}>About Me</Nav.Link>
             <Nav.Link href="#skills" className={activeLink === "skills" ? "active navbar-Link" : "navbar-Link"} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
             <Nav.Link href="#projects" className={activeLink === "projects" ? "active navbar-Link" : "navbar-Link"} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
             <Nav.Link href="#contact" className={activeLink === "contact" ? "active navbar-Link" : "navbar-Link"} onClick={() => onUpdateActiveLink('contact')}>Contact</Nav.Link>
@@ -59,5 +60,6 @@ export const NavBar = () => {
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    </header>
   );
 }
