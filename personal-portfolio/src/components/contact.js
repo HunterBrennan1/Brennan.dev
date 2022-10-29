@@ -8,7 +8,7 @@ AOS.init();
 export const Contact = () => {
   return (
     <section className="contact-section" id="contact">
-      <Container>
+      <Container data-aos="fade-down" data-aos-duration="1800">
         <Row>
           <Col>
             <div class="contact-container">

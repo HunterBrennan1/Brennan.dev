@@ -716,6 +716,8 @@ margin-top: 15px;
   font-size: 30px;
   line-height: 3;
   color: var(--text-color);
+  text-align: left;
+  font-family: 'Barlow Condensed', sans-serif;
 }
 
 .contact-container {
@@ -983,6 +985,7 @@ form textarea {
     .about-me-text{
       font-size: 17px;
     }
+
   }
 
 @media screen and (max-width:455px) {
