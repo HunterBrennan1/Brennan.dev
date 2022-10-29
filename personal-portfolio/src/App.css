@@ -4,6 +4,7 @@
 :root {
   --text-color: #1d1d1d;
   --background-color: #f5f5f5;
+  --background-color-skills:#f5f5f5;
   --link-background-color: #ebebeb;
   --social-background-color: #fff;
   --button-background-color:#fff;
@@ -25,6 +26,7 @@
   transition: 200ms ease;
   --text-color:#fff;
   --background-color:#1c1c1e;
+  --background-color-skills:#121212;
   --light-hover-bg-color:#fff;
   --link-background-color:#121212;
   --link-highlight-color:#1d1d1d;
@@ -33,7 +35,7 @@
   --toggle-bg-color: #fefefe;
   --transition-color:#fff;
   --dark-light:#fff;
-  --border-color:#121212;
+  --border-color:#1c1c1e;
   --background-image:linear-gradient(45deg, #121212, #1c1c1e);
   --background-image: url(./assets/img/darkthemebg.svg);
   --section-opacity:opacity:0.5;
@@ -95,10 +97,6 @@ h3 {
   font-weight: 600 !important;
 }
 
-h4 {
-  /* width:400px; */
-}
-
 header {
   height: 117px;
   background-color: var(--background-color);
@@ -123,6 +121,8 @@ p.danger {
   margin-bottom: 0 !important;
   margin-right: 15px;
 }
+
+
 
 .toggle-theme-wrapper {
   display:flex;
@@ -234,6 +234,10 @@ nav.navbar a.navbar-brand {
   padding: 5px;
   border-radius: 30px;
   align-items: center;
+}
+
+#basic-navbar-nav {
+  background-color: var(--link-background-color);
 }
 
 /* NAVBAR LINK BAR SECTIONS CSS */
@@ -472,7 +476,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /* SKILLS SECTION CSS */
 
 .Skills-Page {
-  background-color: var(--background-color);
+  background-color: var(--background-color-skills);
   --background-image:linear-gradient(45deg, #ebebeb, #fefefe);
   border-color: var(--border-color);
   opacity:var(--section-opacity);
@@ -580,10 +584,6 @@ border-radius: 13px;
   color: var(--text-color);
   background-size: contain;
 
-}
-
-.project-col {
-  /* width: 1000px !important; */
 }
 
 .container-first {
@@ -749,7 +749,7 @@ margin-top: 15px;
   
 
   .projects-section {
-    height: 4000px;
+    height: 2200px;
   }
 
   .proj-lower {
@@ -762,13 +762,18 @@ margin-top: 15px;
     padding-right: 0px !important;
   }
 
+  .proj-lower {
+    margin-top: 50px !important;
+  }
+
   .carousel-img {
     border-bottom-right-radius:0px;
     border-bottom-left-radius:0px;
   }
 
   .project-content-container {
-    margin-bottom: 50px !important;
+    /* margin-bottom: 50px !important; */
+    display: none;
   }
   
 }
@@ -833,7 +838,10 @@ margin-top: 15px;
   .project-container {
     height:300px;
     width:300px !important;
+  }
 
+  .projects-section {
+    height: 1400px;
   }
   
   .carousel {
@@ -843,7 +851,6 @@ margin-top: 15px;
   .carousel-img {
     height:300px;
     width:300px;
-    border-radius: 10px;
   }
 
   .project-content-container {
@@ -873,11 +880,27 @@ margin-top: 15px;
 
 }
 
+@media screen and (max-width:414px){
+  .Skills-Page {
+    height:600px;
+  }
+}
+
+@media screen and (max-width:402px){
+  .Skills-Page {
+    height:700px;
+  }
+}
+
 @media screen and (max-width:397px) {
   .skill-img {
     width:45px;
     height: 45px;
     border-radius: 5px;
+  }
+
+  .Skills-Page {
+    height: 600px;
   }
   
   .skill-title {
@@ -893,14 +916,14 @@ margin-top: 15px;
 
 @media screen and (max-width:378px) {
   .Skills-Page {
-    height: 720px !important;
+    height: 600px !important;
   }
   
 }
 
-@media screen and (max-width:350px) {
+@media screen and (max-width:356px) {
   .Skills-Page {
-    height: 600px;
+    height: 720px !important;
   }
   
 }
