@@ -107,7 +107,7 @@ export const Projects = () => {
 
             <Container
               className="project-container proj-lower"
-              data-aos="fade-left"
+              data-aos="fade-down"
               data-aos-duration="1800"
             >
               <Carousel variant="light">
@@ -170,7 +170,7 @@ export const Projects = () => {
 
             <Container
               className="project-container  proj-lower"
-              data-aos="fade-right"
+              data-aos="fade-up"
               data-aos-duration="1800"
             >
               <Carousel variant="light">

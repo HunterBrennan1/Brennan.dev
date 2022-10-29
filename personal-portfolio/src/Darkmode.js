@@ -1,5 +1,5 @@
 import "../src/App.css";
-import {ChangeEventHandler} from "react";
+import { ChangeEventHandler } from "react";
 
 const setDark = () => {
   localStorage.setItem("theme", "dark");
@@ -11,24 +11,19 @@ const setLight = () => {
 };
 
 const toggleTheme = (e) => {
- if (e.target.checked) {
-  setDark();
- } else {
-  setLight();
- }
-}
-
+  if (e.target.checked) {
+    setDark();
+  } else {
+    setLight();
+  }
+};
 
 const DarkMode = () => {
   return (
     <div className="toggle-theme-wrapper" id="darkMode">
       <label className="toggle-theme" id="toggleTheme" htmlFor="checkbox">
-        <input
-          type="checkbox"
-          id="checkbox"
-          onChange={toggleTheme}
-          />
-          <div className="slider round"></div>
+        <input type="checkbox" id="checkbox" onChange={toggleTheme} />
+        <div className="slider round"></div>
       </label>
     </div>
   );

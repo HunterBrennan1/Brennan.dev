@@ -17,9 +17,12 @@
   --border-color:#ebebeb;
   --background-image:linear-gradient(45deg, #ebebeb, #fefefe);
   --background-image: url(./assets/img/lightthemebg.svg);
+  --section-opacity:opacity:1;
+  --main-bg-img: url(./assets/img/cityday.jpg);
 }
 
 [data-theme="dark"] {
+  transition: 200ms ease;
   --text-color:#fff;
   --background-color:#1c1c1e;
   --light-hover-bg-color:#fff;
@@ -33,6 +36,12 @@
   --border-color:#121212;
   --background-image:linear-gradient(45deg, #121212, #1c1c1e);
   --background-image: url(./assets/img/darkthemebg.svg);
+  --section-opacity:opacity:0.5;
+  --main-bg-img: url(./assets/img/citynight.jpg);
+}
+
+[data-theme="unfocused"] {
+  --section-opacity:opacity:0.2;
 }
 
 
@@ -112,6 +121,7 @@ p.danger {
   color:var(--text-color);
   font-weight:600;
   margin-bottom: 0 !important;
+  margin-right: 15px;
 }
 
 .toggle-theme-wrapper {
@@ -185,7 +195,7 @@ input:checked + .slider {
 }
 
 #darkMode {
-  width: 60px;
+  width: 140px;
 }
 
 /* NAVBAR STRUCTURE CSS */
@@ -220,7 +230,7 @@ nav.navbar a.navbar-brand {
   margin-left: auto !important;
   margin-right: 0 !important;
   background-color: var(--link-background-color);
-  padding-left: 4px !important;
+  padding-left: 6px !important;
   padding: 5px;
   border-radius: 30px;
   align-items: center;
@@ -437,6 +447,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .cityNightcontainer {
+  background-image: var(--main-bg-img);
   height:600px;
   width:500px;
   object-fit: cover;
@@ -464,7 +475,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-color: var(--background-color);
   --background-image:linear-gradient(45deg, #ebebeb, #fefefe);
   border-color: var(--border-color);
-  border-width: 35px;
+  opacity:var(--section-opacity);
+  border-width: 10px;
+  border-left: transparent;
+  border-right: transparent;
   border-style: solid;
   background-size:cover;
   object-fit: contain;
@@ -597,11 +611,11 @@ border-radius: 13px;
 .carousel-img {
   height:500px;
   width:500px;
-  border-radius: 10px;
+  border-radius: 0px;
 }
 
 .project-content-container {
-  background-color: var(--background-color);
+  background-color: var(--link-background-color);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -759,7 +773,10 @@ margin-top: 15px;
   
 }
 
-@media screen and (max-width:990px) {
+@media screen and (max-width:992px) {
+  .toggle {
+    display:none;
+  }
   header {
     height: 60px;
   }
@@ -768,13 +785,26 @@ margin-top: 15px;
     height: 80px;
   }
   
+  
 }
+
+/* @media screen and (max-width:990px) {
+  header {
+    height: 60px;
+  }
+
+  nav {
+    height: 80px;
+  }
+  
+} */
 
 @media screen and (max-width:768px) {
   .img-fluid{
     display:none;
   }
   .cityNightcontainer {
+    background-image: var(--background-image);
     border-top-right-radius: 0px;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -818,6 +848,10 @@ margin-top: 15px;
 
   .project-content-container {
     width: 300px;
+  }
+
+  .toggle-theme {
+    margin-left: 20px;
   }
 
 }
