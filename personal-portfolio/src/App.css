@@ -491,7 +491,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   background-color: var(--background-color-skills);
   --background-image:linear-gradient(45deg, #ebebeb, #fefefe);
   border-color: var(--border-color);
-  opacity:var(--section-opacity);
   border-width: 10px;
   border-left: transparent;
   border-right: transparent;
@@ -701,7 +700,6 @@ margin-top: 15px;
   background-color: var(--background-color-skills);
   --background-image:linear-gradient(45deg, #ebebeb, #fefefe);
   border-color: var(--border-color);
-  opacity:var(--section-opacity);
   border-width: 10px;
   border-left: transparent;
   border-right: transparent;
@@ -800,15 +798,6 @@ form textarea {
 .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-  .hidden {
-    transition: none;
-  }
 }
 
 .App-header {
