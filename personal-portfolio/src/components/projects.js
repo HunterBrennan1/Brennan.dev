@@ -29,15 +29,16 @@ export const Projects = () => {
             <h3>Projects</h3>
 
             <div className="sort-bar">
-              <a className="sort-btn">test</a>
-              <a className="sort-btn">test</a>
-              <a className="sort-btn">test</a>
+              <a className="sort-btn">All</a>
+              <a className="sort-btn">React</a>
+              <a className="sort-btn">JavaScript</a>
+              <a className="sort-btn">Node.js</a>
             </div>
 
             {/* FIRST PROJECT CAROUSEL */}
 
             <Container
-              className="project-container container-first5"
+              className="project-container container-first"
               data-aos="fade-right"
               data-aos-duration="1800"
             >

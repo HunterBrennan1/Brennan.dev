@@ -572,6 +572,10 @@ border-radius: 13px;
   /* width: 1000px !important; */
 }
 
+.container-first {
+  margin-top: 100px !important;
+}
+
 .project-container {
   border-radius: 10px;
   padding-left: 0px !important;
@@ -582,12 +586,9 @@ border-radius: 13px;
   flex-direction: row;
   justify-content:flex-start;
   min-height: fit-content;
-  
 }
 
-.container-first {
-  margin-top: 150px !important;
-}
+
 
 .carousel {
   width:500px;
@@ -648,7 +649,22 @@ margin-top: 15px;
 }
 
 .sort-btn {
-  
+  text-decoration: none;
+  color: var(--text-color);
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+}
+
+.sort-btn:hover {
+  cursor: pointer;
+  color: var(--text-color);
+}
+
+.sort-btn:active,
+.sort-btn:focus {
+  background-color: #121212;
+
 }
 
 /* MEDIA QUERIES AND MAIN APP.JS STYLING  */
