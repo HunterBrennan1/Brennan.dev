@@ -4,7 +4,7 @@
 :root {
   --text-color: #1d1d1d;
   --background-color: #f5f5f5;
-  --background-color-skills:#f5f5f5;
+  --background-color-skills:#ebebeb;
   --link-background-color: #ebebeb;
   --social-background-color: #fff;
   --button-background-color:#fff;
@@ -15,7 +15,7 @@
   --toggle-bg-color: #fefefe;
   --transition-color:#121212;
   --dark-light:#121212;
-  --border-color:#ebebeb;
+  --border-color:#f5f5f5;
   --background-image:linear-gradient(45deg, #ebebeb, #fefefe);
   --background-image: url(./assets/img/lightthemebg.svg);
   --section-opacity:opacity:1;
@@ -95,6 +95,7 @@ h3 {
   font-family: 'Barlow Condensed', sans-serif;
   font-size: 50px !important;
   font-weight: 600 !important;
+  color: var(--text-color);
 }
 
 header {
@@ -237,7 +238,7 @@ nav.navbar a.navbar-brand {
 }
 
 #basic-navbar-nav {
-  background-color: var(--link-background-color);
+  background-color: var(--background-color);
 }
 
 /* NAVBAR LINK BAR SECTIONS CSS */
@@ -447,7 +448,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .headerMain {
   display: block;
   height: 200px;
- 
+}
+
+.headerText {
+  margin-bottom:20px !important;
+  margin-top:20px !important;
 }
 
 .cityNightcontainer {
@@ -465,12 +470,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .connectBtn {
   background-color: var(--dark-light);
   color: var(--link-highlight-color);
-  height: 35px;
-  width: 200px;
-  font-size: 20px;
+  height: 65px !important;
+  width: 250px !important;
+  font-size: 22px;
   font-weight: 600;
   border-radius: 20px;
-  margin-top:15px;
+  margin-top:25px;
+  text-decoration: none;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.connectBtn:hover {
+  color: var(--link-highlight-color);
 }
 
 /* SKILLS SECTION CSS */
@@ -681,6 +693,102 @@ margin-top: 15px;
 
 }
 
+
+/* ABOUT ME SECTION STYLING */
+
+
+.about-section {
+  background-color: var(--background-color-skills);
+  --background-image:linear-gradient(45deg, #ebebeb, #fefefe);
+  border-color: var(--border-color);
+  opacity:var(--section-opacity);
+  border-width: 10px;
+  border-left: transparent;
+  border-right: transparent;
+  border-style: solid;
+  background-size:cover;
+  object-fit: contain;
+  height: 530px;
+  width:100%;
+}
+
+.about-me-text {
+  font-size: 30px;
+  line-height: 3;
+  color: var(--text-color);
+}
+
+.contact-container {
+  /* width: 100%; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  background:var(--link-background-color);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+  padding: 2vw 4vw;
+  width: 100%;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 12px -3px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 10px 10px 12px -3px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 12px -3px rgba(0,0,0,0.75);
+}
+
+.form-title {
+  color: var(--text-color) !important;
+}
+
+form,
+.form-title {
+  color: #1c1d25;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+form input,
+form textarea {
+  border: 0;
+  margin: 10px 0;
+  padding: 20px;
+  outline: none;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-size: 16px;
+}
+
+.submit-button {
+  padding: 15px;
+  background: #B21E35;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 150px;
+  margin: 20px auto 0;
+  border-radius: 30px;
+}
+
+
+/* CONTACT AND FOOTER STYLING  */
+
+
+.contact-section {
+  background-color: var(--background-color);
+  background-image: var(--background-image);
+  background-size: cover;
+  color: var(--text-color);
+  height:100vh;
+  width:100%;
+  padding-top: 100px;
+}
+
+
 /* MEDIA QUERIES AND MAIN APP.JS STYLING  */
 
 .App {
@@ -739,12 +847,28 @@ margin-top: 15px;
     padding-top: 50px;
   }
 
+  .about-me-text{
+    font-size: 25px;
+  }
+
 }
 
 @media screen and (max-width: 1000px) {
 
   .project-col {
     justify-content: space-evenly !important;
+  }
+
+  .navbar-nav {
+    border-radius: 0px;
+    background-color: var(--background-color-skills);
+  }
+
+  #basic-navbar-nav {
+    padding-right: 7px;
+    padding-left: 7px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
   }
   
 
@@ -790,19 +914,11 @@ margin-top: 15px;
     height: 80px;
   }
   
-  
+  .about-me-text {
+    font-size: 20px;
+  }
+
 }
-
-/* @media screen and (max-width:990px) {
-  header {
-    height: 60px;
-  }
-
-  nav {
-    height: 80px;
-  }
-  
-} */
 
 @media screen and (max-width:768px) {
   .img-fluid{
@@ -863,6 +979,12 @@ margin-top: 15px;
 
 }
 
+@media screen and (max-width:477px) {
+    .about-me-text{
+      font-size: 17px;
+    }
+  }
+
 @media screen and (max-width:455px) {
   .Skills-Page {
     height: 800px;
@@ -919,6 +1041,10 @@ margin-top: 15px;
     height: 600px !important;
   }
   
+  .about-me-text {
+    font-size: 15px;
+  }
+
 }
 
 @media screen and (max-width:356px) {

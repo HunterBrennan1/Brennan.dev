@@ -4,6 +4,8 @@ import { MainPage } from "./components/main.js";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { SkillsPage } from "./components/skills.js";
 import { Projects } from "./components/projects.js";
+import { About } from "./components/about.js";
+import { Contact } from "./components/contact.js";
 
 function App() {
   return (
@@ -12,7 +14,8 @@ function App() {
       <MainPage />
       <SkillsPage />
       <Projects />
-      <form />
+      <About />
+      <Contact />
     </div>
   );
 }

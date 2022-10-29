@@ -23,12 +23,11 @@ export const MainPage = () => {
                 A Full Stack Web Developer from New Jersey
               </span>
             </h1>
-            <button
-              className="connectBtn"
-              onClick={() => console.log("connect")}
-            >
-              Let's connect!
-            </button>
+            <div>
+              <a className="connectBtn" href="#contact">
+                Let's connect!
+              </a>
+            </div>
           </Col>
           <Col className="cityNightcontainer" xs={12} md={6} xl={5}>
             {/* <img src={CityNight} /> */}
