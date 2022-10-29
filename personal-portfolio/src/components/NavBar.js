@@ -6,6 +6,10 @@ import navIcon2 from '../assets/img/github1.svg'
 import navIcon3 from '../assets/img/twitter.svg'
 import DarkMode from '../Darkmode.js';
 import { useEffect, useState } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css'
+
+AOS.init();
 
 
 export const NavBar = () => {
@@ -51,9 +55,9 @@ export const NavBar = () => {
           </Nav>
           <span className='navbar-text'>
             <div className='social-icon'>
-              <a href="https://www.linkedin.com/in/hunter-brennan-523000241/"><img src={navIcon1} alt="Linkedin" /></a>
-              <a href="https://github.com/HunterBrennan1"><img src={navIcon2} alt="Github" /></a>
-              <a href="https://twitter.com/hunterb00733201"><img src={navIcon3} alt="Twitter" /></a>
+              <a href="https://www.linkedin.com/in/hunter-brennan-523000241/"  data-aos="fade-down" data-aos-duration="1500"><img src={navIcon1} alt="Linkedin" /></a>
+              <a href="https://github.com/HunterBrennan1" data-aos="fade-down" data-aos-duration="1800"><img src={navIcon2} alt="Github" /></a>
+              <a href="https://twitter.com/hunterb00733201"  data-aos="fade-down" data-aos-duration="2100"><img src={navIcon3} alt="Twitter" /></a>
             </div>
             <button className='vvd' onClick={() => console.log('connect')}><span>Connect With Me!</span></button>
           </span>
