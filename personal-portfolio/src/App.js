@@ -9,14 +9,14 @@ import "../src/App.css";
 
 function App() {
   return (
-    <div className="App">
+    <section className="App">
       <NavBar />
       <MainPage />
       <SkillsPage />
       <Projects />
       <About />
       <Contact />
-    </div>
+    </section>
   );
 }
 
