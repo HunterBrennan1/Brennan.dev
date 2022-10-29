@@ -79,6 +79,17 @@ h2 {
   font-size: 40px !important;
 }
 
+h3 {
+  margin-top: 70px !important;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 50px !important;
+  font-weight: 600 !important;
+}
+
+h4 {
+  /* width:400px; */
+}
+
 header {
   height: 117px;
   background-color: var(--background-color);
@@ -489,6 +500,9 @@ border-radius: 13px;
 .skill-img:hover {
   animation: shake .8s ease-in-out .1s infinite alternate;
 }
+.skill-img-proj:hover {
+  animation: shake 3s ease-in-out .1s infinite alternate;
+}
 
 @keyframes shake {
   0%{
@@ -498,12 +512,12 @@ border-radius: 13px;
   40%,
   60%,
   80%{
-    transform: translate(.8em);
+    transform: translate(.6em);
   }
   10%,
   30%,
   50%{
-    transform: translate(-.2em);
+    transform: translate(-.3em);
   }
   70%,
   100%{
@@ -545,7 +559,7 @@ border-radius: 13px;
 /* PROJECTS SECTION STYLING  */
 
 .projects-section {
-  height: 300vh;
+  height: 2700px;
   width: 100%;
   background-image: var(--background-image);
   background-color: var(--background-color);
@@ -554,15 +568,25 @@ border-radius: 13px;
 
 }
 
+.project-col {
+  /* width: 1000px !important; */
+}
+
 .project-container {
-  background-color: var(--background-color);
   border-radius: 10px;
   padding-left: 0px !important;
   margin-top: 300px;
   height:500px;
   width:500px;
   display: flex;
+  flex-direction: row;
+  justify-content:flex-start;
   min-height: fit-content;
+  
+}
+
+.container-first {
+  margin-top: 150px !important;
 }
 
 .carousel {
@@ -576,12 +600,55 @@ border-radius: 13px;
 }
 
 .project-content-container {
+  background-color: var(--background-color);
   display: flex;
   flex-direction: column;
   align-items: center;
   width: fit-content;
   height:100%;
+  width:auto;
+  /* min-width: 800px; */
+  padding-left:50px;
+  padding-right:50px;
   justify-content: space-evenly;
+}
+
+.skill-img-proj {
+  width: 45px;
+  height: 45px;
+  margin: 10px;
+  box-shadow: 10px 10px 12px -3px rgba(0,0,0,0.75);
+-webkit-box-shadow: 10px 10px 12px -3px rgba(0,0,0,0.75);
+-moz-box-shadow: 10px 10px 12px -3px rgba(0,0,0,0.75);
+border-radius: 5px;
+margin-top: 15px;
+}
+
+.skills-proj {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+
+.sort-bar{
+  background-color: var(--link-background-color);
+  color: var(--text-color);
+  height:50px;
+  width:auto;
+  margin-right: 0 !important;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 10px 10px 12px -3px rgba(0,0,0,0.75);
+  -webkit-box-shadow: 10px 10px 12px -3px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 12px -3px rgba(0,0,0,0.75);
+  border-radius: 5px;
+  margin-top: 30px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.sort-btn {
+  
 }
 
 /* MEDIA QUERIES AND MAIN APP.JS STYLING  */
@@ -644,6 +711,38 @@ border-radius: 13px;
 
 }
 
+@media screen and (max-width: 1000px) {
+
+  .project-col {
+    justify-content: space-evenly !important;
+  }
+  
+
+  .projects-section {
+    height: 4000px;
+  }
+
+  .proj-lower {
+    margin-top: 600px;
+  }
+
+  .project-container {
+    flex-direction: column;
+    width:500px !important;
+    padding-right: 0px !important;
+  }
+
+  .carousel-img {
+    border-bottom-right-radius:0px;
+    border-bottom-left-radius:0px;
+  }
+
+  .project-content-container {
+    margin-bottom: 50px !important;
+  }
+  
+}
+
 @media screen and (max-width:990px) {
   header {
     height: 60px;
@@ -684,9 +783,32 @@ border-radius: 13px;
 
 }
 
+@media screen and (max-width:675px) {
+  .project-container {
+    height:300px;
+    width:300px !important;
+
+  }
+  
+  .carousel {
+    width:300px;
+  }
+  
+  .carousel-img {
+    height:300px;
+    width:300px;
+    border-radius: 10px;
+  }
+
+  .project-content-container {
+    width: 300px;
+  }
+
+}
+
 @media screen and (max-width:455px) {
   .Skills-Page {
-    height: 400px;
+    height: 800px;
   }
 
   .skill-img {
@@ -719,6 +841,13 @@ border-radius: 13px;
   
 }
 
+@media screen and (max-width:378px) {
+  .Skills-Page {
+    height: 720px !important;
+  }
+  
+}
+
 @media screen and (max-width:350px) {
   .Skills-Page {
     height: 600px;
@@ -739,7 +868,7 @@ border-radius: 13px;
 
 @media screen and (height:736px) {
   .Skills-Page {
-    height: 500px;
+    height: 800px;
   }
 }
 

@@ -12,6 +12,7 @@
     "react": "^18.2.0",
     "react-bootstrap": "^2.5.0",
     "react-dom": "^18.2.0",
+    "react-lorem-ipsum": "^1.4.10",
     "react-map-gl": "^7.0.19",
     "react-scripts": "5.0.1",
     "react-switch": "^7.0.0",
