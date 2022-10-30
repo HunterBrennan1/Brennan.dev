@@ -118,6 +118,7 @@ export const NavBar = () => {
               <div className="social-icon">
                 <a
                   href="https://www.linkedin.com/in/hunter-brennan-523000241/"
+                  target="_blank"
                   data-aos="fade-down"
                   data-aos-duration="1500"
                 >
@@ -125,6 +126,7 @@ export const NavBar = () => {
                 </a>
                 <a
                   href="https://github.com/HunterBrennan1"
+                  target="_blank"
                   data-aos="fade-down"
                   data-aos-duration="1800"
                 >
@@ -132,6 +134,7 @@ export const NavBar = () => {
                 </a>
                 <a
                   href="https://twitter.com/hunterb00733201"
+                  target="_blank"
                   data-aos="fade-down"
                   data-aos-duration="2100"
                 >
