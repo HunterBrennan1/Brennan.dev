@@ -104,7 +104,7 @@ export const Projects = () => {
                     alt="skill image"
                   />
                   <img className="skill-img-proj" src={JS} alt="skill image" />
-                  alt="skill image"
+
                 </div>
               </div>
             </Container>
