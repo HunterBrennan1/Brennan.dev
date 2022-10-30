@@ -6,6 +6,10 @@ import { LoremIpsum } from "react-lorem-ipsum";
 import Html5 from "../assets/img/html5.svg";
 import Css3 from "../assets/img/css3.svg";
 import JS from "../assets/img/Javascript.svg";
+import NodeJs from "../assets/img/nodejs.svg";
+import Express from "../assets/img/express.svg";
+import Jquery from "../assets/img/jquery.svg";
+import Reactimg from "../assets/img/reactimg.svg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -27,7 +31,7 @@ export const Projects = () => {
                 React
               </a>
               <a href="#" className="sort-btn">
-                JavaScript
+                Shopify
               </a>
               <a href="#" className="sort-btn">
                 Node.js
@@ -163,21 +167,29 @@ export const Projects = () => {
                 </Carousel.Item>
               </Carousel>
               <div className="project-content-container">
-                <h4>PROJECT 2</h4>
-                <LoremIpsum p={1} className="Project-desc-p" />
-                <p>THIS PROJECT WAS BUILT WITH</p>
-                <div className="skills skills-proj">
-                  <img
-                    className="skill-img-proj"
-                    src={Html5}
-                    alt="skill image"
-                  />
-                  <img
-                    className="skill-img-proj"
-                    src={Css3}
-                    alt="skill image"
-                  />
-                  <img className="skill-img-proj" src={JS} alt="skill image" />
+                <h4>CURRENT PORTFOLIO</h4>
+                <div className="proj-desc-btn-wrap">
+                  <p className="Project-desc-p">That's right! you are currently viewing this project as my current developer portfolio. This project really helped me understand React.js and other tools.</p>
+                  <div>
+                    <a href="https://github.com/HunterBrennan1/Brennan.dev" target="_blank" className="proj-btn-link">Repo Code</a>
+                    <a href="https://hunterbrennandev.netlify.app" target="_blank" className="proj-btn-link">Deployed App</a>
+                  </div>
+                </div>
+                <div><p>THIS PROJECT WAS BUILT WITH</p>
+                  <div className="skills skills-proj">
+                    <img
+                      className="skill-img-proj"
+                      src={Html5}
+                      alt="skill image"
+                    />
+                    <img
+                      className="skill-img-proj"
+                      src={Css3}
+                      alt="skill image"
+                    />
+                    <img className="skill-img-proj" src={JS} alt="skill image" />
+                    <img className="skill-img-proj" src={Reactimg} alt="skill image" />
+                  </div>
                 </div>
               </div>
             </Container>
@@ -239,8 +251,9 @@ export const Projects = () => {
               <div className="project-content-container">
                 <h4>PROJECT 3</h4>
                 <LoremIpsum p={1} className="Project-desc-p" />
-                <p>THIS PROJECT WAS BUILT WITH</p>
+
                 <div className="skills skills-proj">
+                  <p>THIS PROJECT WAS BUILT WITH</p>
                   <img
                     className="skill-img-proj"
                     src={Html5}

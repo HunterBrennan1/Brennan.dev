@@ -5,7 +5,7 @@ import Css3 from "../assets/img/css3.svg";
 import JS from "../assets/img/Javascript.svg";
 import Reactimg from "../assets/img/reactimg.svg";
 import NodeJs from "../assets/img/nodejs.svg";
-import GithubImg from "../assets/img/githubimg.svg";
+import MySQL from "../assets/img/mysql-plain.svg";
 import GitImg from "../assets/img/gitimg.svg";
 import Jquery from "../assets/img/jquery.svg";
 import Express from "../assets/img/express.svg";
@@ -64,11 +64,19 @@ export const SkillsPage = () => {
           <div
             className="skilldiv"
             data-aos="fade-down"
+            data-aos-duration="2000"
+          >
+            <img className="skill-img" src={MySQL} alt="skill image" />
+            <p className="skill-title">MySQL</p>
+          </div>
+          {/* <div
+            className="skilldiv"
+            data-aos="fade-down"
             data-aos-duration="2300"
           >
             <img className="skill-img githubimg" src={Mongodb} />
             <p className="skill-title">MongoDB</p>
-          </div>
+          </div> */}
           <div
             className="skilldiv"
             data-aos="fade-down"
