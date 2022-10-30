@@ -714,7 +714,7 @@ margin-top: 15px;
   font-size: 30px;
   line-height: 3;
   color: var(--text-color);
-  text-align: left;
+  text-align: center;
   font-family: 'Barlow Condensed', sans-serif;
 }
 
@@ -1059,6 +1059,10 @@ form textarea {
 
 @media screen and (height:736px) {
   .Skills-Page {
+    height: 800px;
+  }
+
+  .contact-section {
     height: 800px;
   }
 }

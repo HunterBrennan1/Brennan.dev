@@ -9,6 +9,7 @@ import GithubImg from "../assets/img/githubimg.svg";
 import GitImg from "../assets/img/gitimg.svg";
 import Jquery from "../assets/img/jquery.svg";
 import Express from "../assets/img/express.svg";
+import Mongodb from "../assets/img/mongodb.svg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -65,8 +66,8 @@ export const SkillsPage = () => {
             data-aos="fade-down"
             data-aos-duration="2300"
           >
-            <img className="skill-img githubimg" src={GithubImg} />
-            <p className="skill-title">GitHub</p>
+            <img className="skill-img githubimg" src={Mongodb} />
+            <p className="skill-title">MongoDB</p>
           </div>
           <div
             className="skilldiv"
