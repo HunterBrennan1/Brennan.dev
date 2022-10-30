@@ -6,15 +6,6 @@ import { LoremIpsum, Avatar } from "react-lorem-ipsum";
 import Html5 from "../assets/img/html5.svg";
 import Css3 from "../assets/img/css3.svg";
 import JS from "../assets/img/Javascript.svg";
-import Reactimg from "../assets/img/reactimg.svg";
-import NodeJs from "../assets/img/nodejs.svg";
-import GithubImg from "../assets/img/githubimg.svg";
-import GitImg from "../assets/img/gitimg.svg";
-import Jquery from "../assets/img/jquery.svg";
-import Express from "../assets/img/express.svg";
-import Nav from "react-bootstrap/Nav";
-import Navbar from "react-bootstrap/Navbar";
-import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -29,10 +20,18 @@ export const Projects = () => {
             <h3>Projects</h3>
 
             <div className="sort-bar">
-              <a className="sort-btn">All</a>
-              <a className="sort-btn">React</a>
-              <a className="sort-btn">JavaScript</a>
-              <a className="sort-btn">Node.js</a>
+              <a href="#" className="sort-btn">
+                All
+              </a>
+              <a href="#" className="sort-btn">
+                React
+              </a>
+              <a href="#" className="sort-btn">
+                JavaScript
+              </a>
+              <a href="#" className="sort-btn">
+                Node.js
+              </a>
             </div>
 
             {/* FIRST PROJECT CAROUSEL */}
@@ -94,9 +93,18 @@ export const Projects = () => {
                 <LoremIpsum p={1} className="Project-desc-p" />
                 <p>THIS PROJECT WAS BUILT WITH</p>
                 <div className="skills skills-proj">
-                  <img className="skill-img-proj" src={Html5} />
-                  <img className="skill-img-proj" src={Css3} />
-                  <img className="skill-img-proj" src={JS} />
+                  <img
+                    className="skill-img-proj"
+                    src={Html5}
+                    alt="skill image"
+                  />
+                  <img
+                    className="skill-img-proj"
+                    src={Css3}
+                    alt="skill image"
+                  />
+                  <img className="skill-img-proj" src={JS} alt="skill image" />
+                  alt="skill image"
                 </div>
               </div>
             </Container>
@@ -159,9 +167,17 @@ export const Projects = () => {
                 <LoremIpsum p={1} className="Project-desc-p" />
                 <p>THIS PROJECT WAS BUILT WITH</p>
                 <div className="skills skills-proj">
-                  <img className="skill-img-proj" src={Html5} />
-                  <img className="skill-img-proj" src={Css3} />
-                  <img className="skill-img-proj" src={JS} />
+                  <img
+                    className="skill-img-proj"
+                    src={Html5}
+                    alt="skill image"
+                  />
+                  <img
+                    className="skill-img-proj"
+                    src={Css3}
+                    alt="skill image"
+                  />
+                  <img className="skill-img-proj" src={JS} alt="skill image" />
                 </div>
               </div>
             </Container>
@@ -225,9 +241,17 @@ export const Projects = () => {
                 <LoremIpsum p={1} className="Project-desc-p" />
                 <p>THIS PROJECT WAS BUILT WITH</p>
                 <div className="skills skills-proj">
-                  <img className="skill-img-proj" src={Html5} />
-                  <img className="skill-img-proj" src={Css3} />
-                  <img className="skill-img-proj" src={JS} />
+                  <img
+                    className="skill-img-proj"
+                    src={Html5}
+                    alt="skill image"
+                  />
+                  <img
+                    className="skill-img-proj"
+                    src={Css3}
+                    alt="skill image"
+                  />
+                  <img className="skill-img-proj" src={JS} alt="skill image" />
                 </div>
               </div>
 

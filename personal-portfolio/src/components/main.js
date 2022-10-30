@@ -1,5 +1,4 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import CityNight from "../assets/img/citynight.jpg";
 import { Container, Row, Col } from "react-bootstrap";
 import AOS from "aos";
 import "aos/dist/aos.css";
