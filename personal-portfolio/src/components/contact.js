@@ -12,10 +12,10 @@ export const Contact = () => {
         <Row>
           <Col>
             <div class="contact-container">
-              <form action="eadf720887a6c497cc4838c04d8ee2d4" method="POST">
+              <form name="contact" method="POST" data-netlify="true" onSubmit="submit">
                 <h3 class="form-title">Lets Get In Touch!</h3>
-                <input type="text" id="name" placeholder="Your Name" required />
-                <input type="email" id="email" placeholder="Email" required />
+                <input type="text" id="name" name="name" placeholder="Your Name" required />
+                <input type="email" id="email" name="email" placeholder="Email" required />
                 <input
                   type="text"
                   id="Phone"

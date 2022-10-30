@@ -2,7 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col } from "react-bootstrap";
 import Carousel from "react-bootstrap/Carousel";
 import Placeholder from "../assets/img/citynight.jpg";
-import { LoremIpsum, Avatar } from "react-lorem-ipsum";
+import { LoremIpsum } from "react-lorem-ipsum";
 import Html5 from "../assets/img/html5.svg";
 import Css3 from "../assets/img/css3.svg";
 import JS from "../assets/img/Javascript.svg";
