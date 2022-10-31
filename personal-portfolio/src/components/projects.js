@@ -77,22 +77,30 @@ export const Projects = () => {
               {/* DESCRIPTION */}
 
               <div className="project-content-container">
-                <h4>PROJECT 1</h4>
-                <LoremIpsum p={1} className="Project-desc-p" />
-                <p>THIS PROJECT WAS BUILT WITH</p>
-                <div className="skills skills-proj">
-                  <img
-                    className="skill-img-proj"
-                    src={Html5}
-                    alt="skill image"
-                  />
-                  <img
-                    className="skill-img-proj"
-                    src={Css3}
-                    alt="skill image"
-                  />
-                  <img className="skill-img-proj" src={JS} alt="skill image" />
 
+                <h4>CURRENT PORTFOLIO</h4>
+                <div className="proj-desc-btn-wrap">
+                  <p className="Project-desc-p">That's right! you are currently viewing this project as my current developer portfolio. This project really helped me understand React.js and other tools.</p>
+                  <div>
+                    <a href="https://github.com/HunterBrennan1/Brennan.dev" target="_blank" className="proj-btn-link">Repo Code</a>
+                    <a href="https://hunterbrennandev.netlify.app" target="_blank" className="proj-btn-link">Deployed App</a>
+                  </div>
+                </div>
+                <div><p>THIS PROJECT WAS BUILT WITH</p>
+                  <div className="skills skills-proj">
+                    <img
+                      className="skill-img-proj"
+                      src={Html5}
+                      alt="skill image"
+                    />
+                    <img
+                      className="skill-img-proj"
+                      src={Css3}
+                      alt="skill image"
+                    />
+                    <img className="skill-img-proj" src={JS} alt="skill image" />
+                    <img className="skill-img-proj" src={Reactimg} alt="skill image" />
+                  </div>
                 </div>
               </div>
             </Container>
@@ -194,22 +202,29 @@ export const Projects = () => {
               {/* DESCRIPTION */}
 
               <div className="project-content-container">
-                <h4>PROJECT 3</h4>
-                <LoremIpsum p={1} className="Project-desc-p" />
-
-                <div className="skills skills-proj">
-                  <p>THIS PROJECT WAS BUILT WITH</p>
-                  <img
-                    className="skill-img-proj"
-                    src={Html5}
-                    alt="skill image"
-                  />
-                  <img
-                    className="skill-img-proj"
-                    src={Css3}
-                    alt="skill image"
-                  />
-                  <img className="skill-img-proj" src={JS} alt="skill image" />
+                <h4>CURRENT PORTFOLIO</h4>
+                <div className="proj-desc-btn-wrap">
+                  <p className="Project-desc-p">That's right! you are currently viewing this project as my current developer portfolio. This project really helped me understand React.js and other tools.</p>
+                  <div>
+                    <a href="https://github.com/HunterBrennan1/Brennan.dev" target="_blank" className="proj-btn-link">Repo Code</a>
+                    <a href="https://hunterbrennandev.netlify.app" target="_blank" className="proj-btn-link">Deployed App</a>
+                  </div>
+                </div>
+                <div><p>THIS PROJECT WAS BUILT WITH</p>
+                  <div className="skills skills-proj">
+                    <img
+                      className="skill-img-proj"
+                      src={Html5}
+                      alt="skill image"
+                    />
+                    <img
+                      className="skill-img-proj"
+                      src={Css3}
+                      alt="skill image"
+                    />
+                    <img className="skill-img-proj" src={JS} alt="skill image" />
+                    <img className="skill-img-proj" src={Reactimg} alt="skill image" />
+                  </div>
                 </div>
               </div>
 
