@@ -631,7 +631,14 @@ border-radius: 13px;
 .carousel-img {
   height:500px;
   width:500px;
+  object-fit: contain;
   border-radius: 0px;
+  background-color: var(--link-highlight-color);
+  border: var(--link-background-color);
+  border-width: 10px;
+  border-style: solid;
+
+  
 }
 
 .project-content-container {
@@ -641,7 +648,6 @@ border-radius: 13px;
   align-items: center;
   width: fit-content;
   height:100%;
-  min-width: 800px;
   padding-left:50px;
   padding-right:50px;
   justify-content: space-evenly;
@@ -652,6 +658,7 @@ border-radius: 13px;
   font-size: 20px;
   text-align: left;
   margin-bottom: 40px;
+  width:auto;
 }
 
 .proj-desc-btn-wrap {
@@ -879,6 +886,10 @@ form textarea {
 
   .about-me-text{
     font-size: 25px;
+  }
+
+  .project-container {
+    width: 600px;
   }
 
 }

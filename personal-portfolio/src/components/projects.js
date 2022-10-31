@@ -10,6 +10,9 @@ import NodeJs from "../assets/img/nodejs.svg";
 import Express from "../assets/img/express.svg";
 import Jquery from "../assets/img/jquery.svg";
 import Reactimg from "../assets/img/reactimg.svg";
+import PortImgDark from "../assets/img/portfolio-img-dark.JPG";
+import PortImgLight from "../assets/img/portfolio-img-light.JPG";
+import PortImgMobile from "../assets/img/portfolio-img-mobile.JPG";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -52,12 +55,6 @@ export const Projects = () => {
                     src={Placeholder}
                     alt="First slide"
                   />
-                  <Carousel.Caption>
-                    <h3>First slide label</h3>
-                    <p>
-                      Nulla vitae elit libero, a pharetra augue mollis interdum.
-                    </p>
-                  </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                   <img
@@ -66,12 +63,6 @@ export const Projects = () => {
                     alt="Second slide"
                   />
 
-                  <Carousel.Caption>
-                    <h3>Second slide label</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
-                  </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                   <img
@@ -80,13 +71,6 @@ export const Projects = () => {
                     alt="Third slide"
                   />
 
-                  <Carousel.Caption>
-                    <h3>Third slide label</h3>
-                    <p>
-                      Praesent commodo cursus magna, vel scelerisque nisl
-                      consectetur.
-                    </p>
-                  </Carousel.Caption>
                 </Carousel.Item>
               </Carousel>
 
@@ -126,44 +110,24 @@ export const Projects = () => {
                 <Carousel.Item>
                   <img
                     className="d-block w-1 carousel-img"
-                    src={Placeholder}
+                    src={PortImgLight}
                     alt="First slide"
                   />
-                  <Carousel.Caption>
-                    <h3>First slide label</h3>
-                    <p>
-                      Nulla vitae elit libero, a pharetra augue mollis interdum.
-                    </p>
-                  </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                   <img
                     className="d-block w-1 carousel-img"
-                    src={Placeholder}
+                    src={PortImgDark}
                     alt="Second slide"
                   />
-
-                  <Carousel.Caption>
-                    <h3>Second slide label</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
-                  </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                   <img
                     className="d-block w-1 carousel-img"
-                    src={Placeholder}
+                    src={PortImgMobile}
                     alt="Third slide"
                   />
 
-                  <Carousel.Caption>
-                    <h3>Third slide label</h3>
-                    <p>
-                      Praesent commodo cursus magna, vel scelerisque nisl
-                      consectetur.
-                    </p>
-                  </Carousel.Caption>
                 </Carousel.Item>
               </Carousel>
               <div className="project-content-container">
@@ -208,12 +172,6 @@ export const Projects = () => {
                     src={Placeholder}
                     alt="First slide"
                   />
-                  <Carousel.Caption>
-                    <h3>First slide label</h3>
-                    <p>
-                      Nulla vitae elit libero, a pharetra augue mollis interdum.
-                    </p>
-                  </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                   <img
@@ -222,12 +180,6 @@ export const Projects = () => {
                     alt="Second slide"
                   />
 
-                  <Carousel.Caption>
-                    <h3>Second slide label</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
-                  </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
                   <img
@@ -236,13 +188,6 @@ export const Projects = () => {
                     alt="Third slide"
                   />
 
-                  <Carousel.Caption>
-                    <h3>Third slide label</h3>
-                    <p>
-                      Praesent commodo cursus magna, vel scelerisque nisl
-                      consectetur.
-                    </p>
-                  </Carousel.Caption>
                 </Carousel.Item>
               </Carousel>
 
