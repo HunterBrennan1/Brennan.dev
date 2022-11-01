@@ -631,7 +631,7 @@ border-radius: 13px;
 .carousel-img {
   height:500px;
   width:500px;
-  object-fit: contain;
+  object-fit:scale-down;
   border-radius: 0px;
   background-color: var(--link-highlight-color);
   border: var(--link-background-color);
@@ -661,6 +661,10 @@ border-radius: 13px;
   width:auto;
 }
 
+.pkr {
+  font-size:15px ;
+}
+
 .proj-desc-btn-wrap {
   display: flex;
   flex-direction: column;
@@ -686,6 +690,7 @@ border-radius: 13px;
 }
 
 .skill-img-proj {
+
   width: 45px;
   height: 45px;
   margin: 10px;
@@ -890,6 +895,10 @@ form textarea {
 
   .project-container {
     width: 600px;
+  }
+
+  .Project-desc-p {
+    font-size: 12px;
   }
 
 }
