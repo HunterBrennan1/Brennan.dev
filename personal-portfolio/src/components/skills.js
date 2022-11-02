@@ -10,6 +10,7 @@ import GitImg from "../assets/img/gitimg.svg";
 import Jquery from "../assets/img/jquery.svg";
 import Express from "../assets/img/express.svg";
 import Mongodb from "../assets/img/mongodb.svg";
+import GraphQL from "../assets/img/graphql-plain.svg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -108,6 +109,30 @@ export const SkillsPage = () => {
               alt="skill image"
             />
             <p className="skill-title">Express.js</p>
+          </div>
+          <div
+            className="skilldiv"
+            data-aos="fade-down"
+            data-aos-duration="3000"
+          >
+            <img
+              className="skill-img githubimg"
+              src={Mongodb}
+              alt="skill image"
+            />
+            <p className="skill-title">MongoDB</p>
+          </div>
+          <div
+            className="skilldiv"
+            data-aos="fade-down"
+            data-aos-duration="3000"
+          >
+            <img
+              className="skill-img githubimg"
+              src={GraphQL}
+              alt="skill image"
+            />
+            <p className="skill-title">GraphQL</p>
           </div>
         </div>
       </Container>
