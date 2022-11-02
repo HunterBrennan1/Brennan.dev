@@ -142,7 +142,7 @@ export const Projects = () => {
               <div className="project-content-container">
                 <h4>CURRENT PORTFOLIO</h4>
                 <div className="proj-desc-btn-wrap">
-                  <p className="Project-desc-p">That's right! you are currently viewing this project as my current developer portfolio. This project really helped me understand React.js and other tools.</p>
+                  <p className="Project-desc-p">That's right! you are currently viewing this project as my current developer portfolio. This project was made as an improvement to an older version of my portfolio and allowed me to complile my new skills into a platform to display my work.</p>
                   <div>
                     <a href="https://github.com/HunterBrennan1/Brennan.dev" target="_blank" className="proj-btn-link">Repo Code</a>
                     <a href="https://hunterbrennandev.netlify.app" target="_blank" className="proj-btn-link">Deployed App</a>
