@@ -1,5 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Container, Row, Col } from "react-bootstrap";
+import PrimaryKeys2 from "../assets/img/Pkrimg2.JPG";
+import Gif from "../assets/img/gifimg.gif"
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -11,21 +13,17 @@ export const About = () => {
       <Container>
         <Row>
           <Col>
-            <div>
-              <h3>A Little About Me...</h3>
-              <p className="about-me-text">
-                <span>&#8226;</span>I was born in Jupiter Florida, and moved to
-                New Jersey with my family.
-              </p>
-              <p className="about-me-text">
-                <span>&#8226;</span>When im not coding, I spend a lot of time
-                with friends and love to experience new things.
-              </p>
-              <p className="about-me-text">
-                <span>&#8226;</span>Passioniate about Body And Mental
-                Improvement
-              </p>
+            <div className="about-content-container">
+              <div>
+                <h3 className="about-header">A Little About Me...</h3>
+                <p className="about-me-text">
+                  I'm a <span className="big-bold-text">Full Stack Web Developer</span> with a passion for learning. I'm currently attending a Full Stack Web Development Boot Camp with<span className="school-name"> UC Berkeley Extention</span>, Where I am collecting new skills to add under my belt, like the ones listed above!.</p>
+              </div>
+              <div>
+                <img src={Gif} className="about-img" alt="placeholder" />
+              </div>
             </div>
+
           </Col>
         </Row>
       </Container>
