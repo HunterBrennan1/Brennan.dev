@@ -597,12 +597,13 @@ border-radius: 13px;
 /* PROJECTS SECTION STYLING  */
 
 .projects-section {
-  height: 2700px;
+  height: auto;
   width: 100%;
   background-image: var(--background-image);
   background-color: var(--background-color);
   color: var(--text-color);
   background-size: contain;
+  padding-bottom: 70px;
 
 }
 
@@ -613,7 +614,7 @@ border-radius: 13px;
 .project-container {
   border-radius: 10px;
   padding-left: 0px !important;
-  margin-top: 300px;
+  margin-top: 100px;
   height:500px;
   width:500px;
   display: flex;
@@ -922,9 +923,9 @@ form textarea {
   }
   
 
-  .projects-section {
+  /* .projects-section {
     height: 2200px;
-  }
+  } */
 
   .proj-lower {
     margin-top: 600px;
@@ -1006,9 +1007,9 @@ form textarea {
     width:300px !important;
   }
 
-  .projects-section {
+  /* .projects-section {
     height: 1400px;
-  }
+  } */
   
   .carousel {
     width:300px;

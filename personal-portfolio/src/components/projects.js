@@ -38,16 +38,13 @@ export const Projects = () => {
                 React
               </a>
               <a href="#" className="sort-btn">
-                Shopify
-              </a>
-              <a href="#" className="sort-btn">
                 Node.js
               </a>
             </div>
 
             {/* FIRST PROJECT CAROUSEL */}
 
-            <Container
+            {/* <Container
               className="project-container container-first"
               data-aos="fade-right"
               data-aos-duration="1800"
@@ -76,11 +73,11 @@ export const Projects = () => {
                   />
 
                 </Carousel.Item>
-              </Carousel>
+              </Carousel> */}
 
-              {/* DESCRIPTION */}
+            {/* DESCRIPTION */}
 
-              <div className="project-content-container">
+            {/* <div className="project-content-container">
 
                 <h4>CURRENT PORTFOLIO</h4>
                 <div className="proj-desc-btn-wrap">
@@ -107,7 +104,7 @@ export const Projects = () => {
                   </div>
                 </div>
               </div>
-            </Container>
+            </Container> */}
 
             {/* SECOND PROJECT CAROUSEL */}
 
