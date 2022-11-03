@@ -16,6 +16,7 @@ import PortImgMobile from "../assets/img/portfolio-img-mobile.JPG";
 import PrimaryKeys1 from "../assets/img/pkrimg1.JPG";
 import PrimaryKeys2 from "../assets/img/Pkrimg2.JPG";
 import PrimaryKeys3 from "../assets/img/pkrmobile.JPG";
+import { useState } from "react";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -23,6 +24,11 @@ import "aos/dist/aos.css";
 AOS.init();
 
 export const Projects = () => {
+  const [showtab, setShowtab] = useState(1);
+
+  const handletab = (e) => {
+    setShowtab(e);
+  }
   return (
     <section className="projects-section" id="projects">
       <Container>
@@ -31,87 +37,25 @@ export const Projects = () => {
             <h3>Projects</h3>
 
             <div className="sort-bar">
-              <a href="#" className="sort-btn">
+              <button className={showtab === 1 ? "sort-btn" : "sort-btn"} id="all-btn" onClick={() => handletab(1)}>
                 All
-              </a>
-              <a href="#" className="sort-btn">
+              </button>
+              <button className={showtab === 2 ? "sort-btn" : "sort-btn"} id="react-btn" onClick={() => handletab(2)}>
                 React
-              </a>
-              <a href="#" className="sort-btn">
+              </button>
+              <button className={showtab === 3 ? "sort-btn" : "sort-btn"} id="node-btn" onClick={() => handletab(3)}>
                 Node.js
-              </a>
+              </button>
             </div>
 
-            {/* FIRST PROJECT CAROUSEL */}
-
-            {/* <Container
-              className="project-container container-first"
-              data-aos="fade-right"
-              data-aos-duration="1800"
-            >
-              <Carousel variant="light">
-                <Carousel.Item>
-                  <img
-                    className="d-block w-1 carousel-img"
-                    src={Placeholder}
-                    alt="First slide"
-                  />
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img
-                    className="d-block w-1 carousel-img"
-                    src={Placeholder}
-                    alt="Second slide"
-                  />
-
-                </Carousel.Item>
-                <Carousel.Item>
-                  <img
-                    className="d-block w-1 carousel-img"
-                    src={Placeholder}
-                    alt="Third slide"
-                  />
-
-                </Carousel.Item>
-              </Carousel> */}
-
-            {/* DESCRIPTION */}
-
-            {/* <div className="project-content-container">
-
-                <h4>CURRENT PORTFOLIO</h4>
-                <div className="proj-desc-btn-wrap">
-                  <p className="Project-desc-p">That's right! you are currently viewing this project as my current developer portfolio. This project really helped me understand React.js and other tools.</p>
-                  <div>
-                    <a href="https://github.com/HunterBrennan1/Brennan.dev" target="_blank" className="proj-btn-link">Repo Code</a>
-                    <a href="https://hunterbrennandev.netlify.app" target="_blank" className="proj-btn-link">Deployed App</a>
-                  </div>
-                </div>
-                <div><p>THIS PROJECT WAS BUILT WITH</p>
-                  <div className="skills skills-proj">
-                    <img
-                      className="skill-img-proj"
-                      src={Html5}
-                      alt="skill image"
-                    />
-                    <img
-                      className="skill-img-proj"
-                      src={Css3}
-                      alt="skill image"
-                    />
-                    <img className="skill-img-proj" src={JS} alt="skill image" />
-                    <img className="skill-img-proj" src={Reactimg} alt="skill image" />
-                  </div>
-                </div>
-              </div>
-            </Container> */}
 
             {/* SECOND PROJECT CAROUSEL */}
 
             {/* DESCRIPTION */}
 
             <Container
-              className="project-container proj-lower"
+              className={showtab === 2 ? "project-container proj-lower react-proj" : "project-container proj-lower react-proj"}
+              id="proj-one"
               data-aos="fade-down"
               data-aos-duration="1800"
             >
@@ -170,7 +114,8 @@ export const Projects = () => {
             {/* THIRD PROJECT CAROUSEL */}
 
             <Container
-              className="project-container  proj-lower"
+              className={showtab === 3 ? "project-container proj-lower node-proj active" : "project-container proj-lower node-proj node-proj"}
+              id="proj-two"
               data-aos="fade-up"
               data-aos-duration="1800"
             >
@@ -237,5 +182,9 @@ export const Projects = () => {
         </Row>
       </Container>
     </section>
+
+
   );
 };
+
+

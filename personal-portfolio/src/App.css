@@ -609,6 +609,10 @@ border-radius: 13px;
 
 }
 
+.proj-hidden {
+  display:none;
+}
+
 .container-first {
   margin-top: 100px !important;
 }
@@ -733,6 +737,9 @@ margin-top: 15px;
   font-family: 'Barlow Condensed', sans-serif;
   font-weight: 600;
   font-size: 30px;
+  border: none;
+  width:78px;
+  background-color: transparent;
 }
 
 .sort-btn:hover {
@@ -742,7 +749,9 @@ margin-top: 15px;
 
 .sort-btn:active,
 .sort-btn:focus {
-  background-color: #121212;
+
+  color: #fff;
+  border-radius: 20px;
 
 }
 
