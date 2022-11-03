@@ -2,7 +2,7 @@
   "name": "personal-portfolio",
   "version": "0.1.0",
   "main": "App.js",
-  "homepage": "https://hunterbrennandev.netlify.app",
+  "homepage": "https://hunterbrennan1.github.io/Brennan.dev/",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.9.0",
