@@ -146,7 +146,7 @@ export const NavBar = () => {
                 className="vvd"
                 onClick={() => console.log("connect")}
               >
-                <span>Connect With Me!</span>
+                <span><a>Resume Download</a></span>
               </button>
             </span>
           </Navbar.Collapse>
