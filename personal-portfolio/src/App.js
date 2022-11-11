@@ -5,6 +5,7 @@ import { SkillsPage } from "./components/skills.js";
 import { Projects } from "./components/projects.js";
 import { About } from "./components/about.js";
 import { Contact } from "./components/contact.js";
+
 import "../src/App.css";
 
 function App() {
@@ -12,9 +13,9 @@ function App() {
     <div className="App">
       <NavBar />
       <MainPage />
-      <SkillsPage />
-      <Projects />
       <About />
+      {/* <SkillsPage /> */}
+      <Projects />
       <Contact />
     </div>
   );

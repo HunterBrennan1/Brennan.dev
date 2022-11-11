@@ -56,7 +56,7 @@ export const NavBar = () => {
     <header>
       <Navbar expand="lg" className={scrolled ? "scrolled" : ""}>
         <Container>
-          <p className="toggle">Toggle Theme</p>
+          {/* <p className="toggle">Toggle Theme</p> */}
           <Navbar.Brand href="#home">
             <DarkMode />
           </Navbar.Brand>

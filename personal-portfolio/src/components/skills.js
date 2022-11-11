@@ -20,7 +20,8 @@ export const SkillsPage = () => {
   return (
     <section className="Skills-Page" id="skills">
       <Container className="skillswrapper">
-        <h2>My Tech Stack and Skills</h2>
+        <h2 data-aos="fade-down"
+          data-aos-duration="2000">My Tech Stack and Skills</h2>
         <div className="skills">
           <div
             className="skilldiv"
@@ -70,14 +71,7 @@ export const SkillsPage = () => {
             <img className="skill-img" src={MySQL} alt="skill image" />
             <p className="skill-title">MySQL</p>
           </div>
-          {/* <div
-            className="skilldiv"
-            data-aos="fade-down"
-            data-aos-duration="2300"
-          >
-            <img className="skill-img githubimg" src={Mongodb} />
-            <p className="skill-title">MongoDB</p>
-          </div> */}
+
           <div
             className="skilldiv"
             data-aos="fade-down"
@@ -110,7 +104,7 @@ export const SkillsPage = () => {
             />
             <p className="skill-title">Express.js</p>
           </div>
-          <div
+          {/* <div
             className="skilldiv"
             data-aos="fade-down"
             data-aos-duration="3000"
@@ -133,7 +127,7 @@ export const SkillsPage = () => {
               alt="skill image"
             />
             <p className="skill-title">GraphQL</p>
-          </div>
+          </div> */}
         </div>
       </Container>
     </section>

@@ -36,19 +36,6 @@ export const Projects = () => {
           <Col className="project-col">
             <h3>Projects</h3>
 
-            <div className="sort-bar">
-              <button className={showtab === 1 ? "sort-btn" : "sort-btn"} id="all-btn" onClick={() => handletab(1)}>
-                All
-              </button>
-              <button className={showtab === 2 ? "sort-btn" : "sort-btn"} id="react-btn" onClick={() => handletab(2)}>
-                React
-              </button>
-              <button className={showtab === 3 ? "sort-btn" : "sort-btn"} id="node-btn" onClick={() => handletab(3)}>
-                Node.js
-              </button>
-            </div>
-
-
             {/* SECOND PROJECT CAROUSEL */}
 
             {/* DESCRIPTION */}

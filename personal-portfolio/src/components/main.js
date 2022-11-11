@@ -15,7 +15,6 @@ export const MainPage = () => {
           data-aos-duration="1500"
         >
           <Col className="headerMain" xs={12} md={6} xl={7}>
-            <span className="tagLine">Welcome to my Portfolio!</span>
             <h1 className="headerText">
               {` Hey, I'm Hunter, `}
               <span className="wrap">
