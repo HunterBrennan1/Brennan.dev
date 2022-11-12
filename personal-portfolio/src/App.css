@@ -583,8 +583,9 @@ border-radius: 13px;
   width: 100%;
   background-image: var(--background-image);
   background-color: var(--background-color);
+  background-repeat: no-repeat;
   color: var(--text-color);
-  background-size: contain;
+  background-size: cover;
   padding-bottom: 70px;
 
 }
@@ -598,7 +599,7 @@ border-radius: 13px;
 }
 
 .project-container {
-  border-radius: 10px;
+  border-radius: 20px;
   padding-left: 0px !important;
   margin-top: 100px;
   height:500px;
@@ -607,12 +608,16 @@ border-radius: 13px;
   flex-direction: row;
   justify-content:flex-start;
   min-height: fit-content;
+  
 }
 
 
 
 .carousel {
   width:500px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+
 }
 
 .carousel-img {
@@ -624,7 +629,8 @@ border-radius: 13px;
   border: var(--link-background-color);
   border-width: 10px;
   border-style: solid;
-
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
   
 }
 
@@ -638,13 +644,15 @@ border-radius: 13px;
   padding-left:50px;
   padding-right:50px;
   justify-content: space-evenly;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .Project-desc-p {
   color: var(--text-color);
   font-size: 20px;
   text-align: left;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   width:auto;
 }
 
@@ -815,7 +823,7 @@ form {
   padding: 2vw 4vw;
   width: 100%;
   max-width: 600px;
-  border-radius: 10px;
+  border-radius: 20px;
   box-shadow: 10px 10px 12px -3px rgba(0,0,0,0.75);
   -webkit-box-shadow: 10px 10px 12px -3px rgba(0,0,0,0.75);
   -moz-box-shadow: 10px 10px 12px -3px rgba(0,0,0,0.75);
@@ -964,6 +972,7 @@ form textarea {
   .project-container {
     flex-direction: column;
     width:500px !important;
+    height:auto;
     padding-right: 0px !important;
   }
 
@@ -974,13 +983,25 @@ form textarea {
   .carousel-img {
     border-bottom-right-radius:0px;
     border-bottom-left-radius:0px;
+    border-top-right-radius: 20px;
   }
 
   .project-content-container {
-    /* margin-bottom: 50px !important; */
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 20px;
+    width:500px;
+    height:200px;
+  }
+
+  .Project-desc-p {
     display: none;
   }
-  
+
+  .project-skill-list {
+    display:none;
+  }
+
+
 }
 
 @media screen and (max-width:992px) {
@@ -1085,8 +1106,12 @@ form textarea {
 
 @media screen and (max-width:675px) {
   .project-container {
-    height:300px;
+    /* height:300px; */
     width:300px !important;
+  }
+
+  .proj-btn-link {
+    font-size: 10px;
   }
 
   /* .projects-section {

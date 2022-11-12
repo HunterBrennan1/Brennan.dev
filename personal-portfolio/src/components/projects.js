@@ -34,6 +34,7 @@ export const Projects = () => {
       <Container>
         <Row>
           <Col className="project-col">
+
             <h3>Projects</h3>
 
             {/* SECOND PROJECT CAROUSEL */}
@@ -79,7 +80,7 @@ export const Projects = () => {
                     <a href="https://hunterbrennandev.netlify.app" target="_blank" className="proj-btn-link">Deployed App</a>
                   </div>
                 </div>
-                <div><p>THIS PROJECT WAS BUILT WITH</p>
+                <div className="project-skill-list"><p>THIS PROJECT WAS BUILT WITH</p>
                   <div className="skills skills-proj">
                     <img
                       className="skill-img-proj"
@@ -144,7 +145,7 @@ export const Projects = () => {
                     <a href="https://primary-keys-rentals.herokuapp.com/login" target="_blank" className="proj-btn-link">Deployed App</a>
                   </div>
                 </div>
-                <div><p>THIS PROJECT WAS BUILT WITH</p>
+                <div className="project-skill-list"><p>THIS PROJECT WAS BUILT WITH</p>
                   <div className="skills skills-proj">
                     <img
                       className="skill-img-proj"
