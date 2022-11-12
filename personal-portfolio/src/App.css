@@ -783,7 +783,7 @@ margin-top: 15px;
   font-family: 'Barlow Condensed', sans-serif;
   margin-top:65px;
   width: auto;
-  padding: 15px;
+  padding: 25px;
 }
 
 .big-bold-text {
@@ -1126,14 +1126,22 @@ form textarea {
     /* height: 800px; */
   }
 
-  .skill-img {
-    width:40px;
-    height: 40px;
-    border-radius: 8px;
-  }
-
   h2 {
     font-size: 30px !important;
+  }
+
+  .skillswrapper {
+    width:300px !important;
+    
+  }
+
+  .skill-img{
+    width:50px;
+    height: 50px;
+    border-radius: 8px;
+    margin-left:0px !important;
+    margin-right:0px !important;
+    
   }
   
   .skill-title {
@@ -1143,10 +1151,17 @@ form textarea {
 
   .skilldiv {
     width: 50px;
+    gap: 10px;
   }
 
   .skill-title {
     display: none;
+  }
+
+  .skills{
+    justify-content: space-evenly !important;
+    width: 200px;
+    gap: 20px;
   }
 
 }
@@ -1155,11 +1170,27 @@ form textarea {
   .Skills-Page {
     height:600px;
   }
+
+  h2 {
+    padding-top: 0px;
+  }
+
+  .about-content-container{
+    /* height:800px; */
+  }
+
+  .Skills-Page{
+    height:300px;
+  }
+
+  .about-me-text {
+    margin-top: 20px;
+  }
 }
 
 @media screen and (max-width:402px){
   .Skills-Page {
-    height:700px;
+    /* height:700px; */
   }
 }
 
@@ -1170,24 +1201,28 @@ form textarea {
     border-radius: 5px;
   }
 
-  .Skills-Page {
-    height: 600px;
-  }
-  
   .skill-title {
     margin-top: 10px;
     margin-bottom: 10px;
   }
 
   h2 {
-    padding-top: 50px;
+    padding-top: 0px !important;
+  }
+
+  .about-header {
+    font-size: 30px !important;
+  }
+
+  .about-me-text {
+    margin-top: 20px;
   }
   
 }
 
 @media screen and (max-width:378px) {
   .Skills-Page {
-    height: 600px !important;
+    /* height: 600px !important; */
   }
   
   .about-me-text {
@@ -1198,8 +1233,9 @@ form textarea {
 
 @media screen and (max-width:356px) {
   .Skills-Page {
-    height: 720px !important;
+    /* height: 720px !important; */
   }
+
   
 }
 
