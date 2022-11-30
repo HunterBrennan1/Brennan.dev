@@ -16,6 +16,8 @@ import PortImgMobile from "../assets/img/portfolio-img-mobile.JPG";
 import PrimaryKeys1 from "../assets/img/pkrimg1.JPG";
 import PrimaryKeys2 from "../assets/img/Pkrimg2.JPG";
 import PrimaryKeys3 from "../assets/img/pkrmobile.JPG";
+import Dda from "../assets/img/daydream-athletic.JPG"
+import Dda2 from "../assets/img/daydream-athletic2.JPG"
 import { useState } from "react";
 
 import AOS from "aos";
@@ -51,30 +53,30 @@ export const Projects = () => {
                 <Carousel.Item>
                   <img
                     className="d-block w-1 carousel-img"
-                    src={PortImgLight}
+                    src={Dda}
                     alt="First slide"
                   />
                 </Carousel.Item>
                 <Carousel.Item>
                   <img
                     className="d-block w-1 carousel-img"
-                    src={PortImgDark}
+                    src={Dda2}
                     alt="Second slide"
                   />
                 </Carousel.Item>
-                <Carousel.Item>
+                {/* <Carousel.Item>
                   <img
                     className="d-block w-1 carousel-img"
                     src={PortImgMobile}
                     alt="Third slide"
                   />
 
-                </Carousel.Item>
+                </Carousel.Item> */}
               </Carousel>
               <div className="project-content-container">
-                <h4>CURRENT PORTFOLIO</h4>
+                <h4>Day Dream Athletic</h4>
                 <div className="proj-desc-btn-wrap">
-                  <p className="Project-desc-p">That's right! you are currently viewing this project as my current developer portfolio. This project was made as an improvement to an older version of my portfolio and allowed me to complile my new skills into a platform to display my work.</p>
+                  <p className="Project-desc-p">Day Dream Athletic is an E-commerce brand clothign store built using full stack development that allows users to create accounts, checkout itmes, and built with a functioning product purchase using the stripe API</p>
                   <div>
                     <a href="https://github.com/HunterBrennan1/Brennan.dev" target="_blank" className="proj-btn-link">Repo Code</a>
                     <a href="https://hunterbrennandev.netlify.app" target="_blank" className="proj-btn-link">Deployed App</a>

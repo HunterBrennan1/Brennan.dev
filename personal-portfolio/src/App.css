@@ -424,7 +424,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 
 .vvd {
   margin-left: 15px;
-  width:130px;
+  width:150px;
   height: 50px;
 }
 
@@ -463,7 +463,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 .headerText {
-  margin-bottom:20px !important;
+  margin-bottom:50px !important;
   margin-top:20px !important;
 }
 
@@ -487,7 +487,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   font-size: 22px;
   font-weight: 600;
   border-radius: 20px;
-  margin-top:25px;
   text-decoration: none;
   padding:5px;
   padding-left: 20px;
