@@ -78,8 +78,8 @@ export const Projects = () => {
                 <div className="proj-desc-btn-wrap">
                   <p className="Project-desc-p">Day Dream Athletic is an E-commerce brand clothign store built using full stack development that allows users to create accounts, checkout itmes, and built with a functioning product purchase using the stripe API</p>
                   <div>
-                    <a href="https://github.com/HunterBrennan1/Brennan.dev" target="_blank" className="proj-btn-link">Repo Code</a>
-                    <a href="https://hunterbrennandev.netlify.app" target="_blank" className="proj-btn-link">Deployed App</a>
+                    <a href="https://github.com/HunterBrennan1/DayDreamAthletic" target="_blank" className="proj-btn-link">Repo Code</a>
+                    <a href="https://daydream-athletic.herokuapp.com/" target="_blank" className="proj-btn-link">Deployed App</a>
                   </div>
                 </div>
                 <div className="project-skill-list"><p>THIS PROJECT WAS BUILT WITH</p>
