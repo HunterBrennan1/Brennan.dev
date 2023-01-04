@@ -24,7 +24,7 @@ export const About = () => {
               <div>
                 <h3 className="about-header">A Little About Me...</h3>
                 <p className="about-me-text">
-                  I'm a <span className="big-bold-text">Full Stack Web Developer</span> with a passion for learning. I'm currently attending a Full Stack Web Development Boot Camp with<span className="school-name"> UC Berkeley Extention</span>, Where I am collecting new skills to add under my belt, like the ones listed above!.</p>
+                  I'm a <span className="big-bold-text">Full Stack Web Developer</span> with a passion for learning. I'm a Bootcamp graduate with<span className="school-name"> UC Berkeley Extention</span>, Where I have completed my Full Stack Web Development Certificate. <br></br> I'm Currently working on personal projects to better myself and continue to learn!</p>
               </div>
               <div>
                 <section className="Skills-Page" id="skills">
