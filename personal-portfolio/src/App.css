@@ -48,8 +48,6 @@
   --section-opacity:opacity:0.2;
 }
 
-
-
 *{
   margin:0;
   padding:0;
@@ -69,7 +67,6 @@ body.light{
   color: var(--text-color) ;
   font-family:'Poppins', sans-serif; 
 
-   
 }
 body.dark {
   font-weight: 400;
@@ -1273,6 +1270,10 @@ form textarea {
 
   .Skills-Page {
     /* height: 800px; */
+  }
+
+  .about-section{
+    height:900px;
   }
 
   .about-header {
