@@ -27,7 +27,7 @@ export const MainPage = () => {
               </a>
             </div>
             <div className="devstage">
-              <p>Portfolio Is Currently In A Development Stage Content Is Subject To Change!</p>
+              <p>Portfolio Is Currently In A Development Stage, Content Is Subject To Change!</p>
             </div>
           </Col>
           <Col className="cityNightcontainer" xs={12} md={6} xl={5}>
