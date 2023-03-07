@@ -122,6 +122,15 @@ p.danger {
   margin-right: 15px;
 }
 
+.devstage{
+  background-color: #B21E35;
+  margin:20px;
+  /* border-radius: 20px; */
+  color:#ebebeb;
+  font-size: 18px;
+  font-weight: bold;
+}
+
 
 
 .toggle-theme-wrapper {

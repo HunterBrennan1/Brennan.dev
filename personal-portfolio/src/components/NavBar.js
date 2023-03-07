@@ -143,6 +143,9 @@ export const NavBar = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+      <div>
+        <p>Portfolio Is Currently In A Development Stage Content Is Subject To Change!</p>
+      </div>
     </header>
   );
 };
